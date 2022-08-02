@@ -3,9 +3,7 @@ namespace BestBuyBestPractices
 {
     public interface IDepartmentRepository
     {
-        public IEnumerable<Department> GetAllDepartments();
+        IEnumerable<Department> GetAllDepartments(); //stubbed out method
+        public void InsertDepartment(string newDepartmentName);
     }
-
-    
 }
-
