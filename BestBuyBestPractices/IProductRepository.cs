@@ -1,11 +1,13 @@
 ﻿using System;
 namespace BestBuyBestPractices
 {
-    public class IProductRepository
+    public interface IProductRepository
     {
-        public IProductRepository()
-        {
-        }
-    }
-}
+        IEnumerable<Products> GetAllProducts();
+        public void CreateProduct(string name, double price, int categoryID);
 
+    }
+
+
+
+}
