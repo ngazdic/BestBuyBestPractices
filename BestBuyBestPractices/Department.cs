@@ -2,7 +2,7 @@
 
 namespace BestBuyBestPractices
 {
-    public class Department : IDepartmentRepository
+    public class Department 
     {
         public Department()
         {
@@ -12,10 +12,7 @@ namespace BestBuyBestPractices
 
         public string Name { get; set };
 
-        public IEnumerable<Department> GetAllDepartments()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
 
